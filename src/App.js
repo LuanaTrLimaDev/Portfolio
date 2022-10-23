@@ -33,8 +33,8 @@ function App() {
           <div className='lua-img'>
             <img src={luanaavatar} className="img-luana" />
           </div>
-          <h4 className='title-resumo'>Analista de desenvolvimento frontend</h4>
-          <p className='text-resumo'>com pouco mais de um dois anos de experiência como programadora, atualmente trabalho na Simpro publicações e teleprocessamento como Analista de desenvolvimento FrontEnd Jr. Sou formada em Análise e Desenvolvimento de Sistema, pela Estácio. Atualmente moro em São Paulo - SP.</p>
+          <h4 className='title-resumo'>Analista de desenvolvimento frontEnd</h4>
+          <p className='text-resumo'>Com pouco mais de um dois anos de experiência como programadora, atualmente trabalho na Simpro Publicações e Teleprocessamento como Analista de desenvolvimento FrontEnd Jr. Sou formada em Análise e Desenvolvimento de Sistema, pela Estácio. Atualmente moro em São Paulo - SP.</p>
         </div>
       </div>
 
@@ -42,7 +42,7 @@ function App() {
       <div className="sobre-contato" id="sobre">
         <div className='sobre-mim'>
           <h2 className="titulo-geral">Sobre mim</h2>
-          <p className="text-geral">Meu nome é Luana,tenho 25 anos, e  um pouco mais de um dois anos de experiência como programadora, atualmente trabalho na Simpro publicações e teleprocessamento como Analista de desenvolvimento FrontEnd Jr, realizando todo o frontend utilizando html, css e bootstrap para layout de modelo responsivo em angular, controle de rotas e consumo de API. Sou formada em Análise e Desenvolvimento de Sistema, pela Estácio. Atualmente moro em São Paulo - SP.</p>
+          <p className="text-geral">Meu nome é Luana, tenho 25 anos, e um pouco mais de um dois anos de experiência como programadora, atualmente trabalho na Simpro publicações e teleprocessamento como Analista de desenvolvimento FrontEnd Jr, realizando todo o frontend utilizando html, css e bootstrap para layout de modelo responsivo em angular, controle de rotas e consumo de API. Sou formada em Análise e Desenvolvimento de Sistema, pela Estácio. Atualmente moro em São Paulo - SP.</p>
 
           <a href={curriculoLuana} download className='btn-curriculo'>Baixe meu currículo</a>
         </div>
@@ -52,7 +52,7 @@ function App() {
             <h2 className='titulo-geral'>Contato</h2>
             <p className="text-contato"><strong>Telefone: </strong>(11) 95834-4522</p>
             <p className="text-contato"><strong>E-mail: </strong>luana.trigueiro.sjc@gmail.com</p>
-            <p className="text-contato"><strong>Residência:</strong> São Paulo - SP (próximo a linha 3 do metrô, região da penha)</p>
+            <p className="text-contato"><strong>Residência:</strong> São Paulo - SP (próximo a linha 3 do metrô, região da Penha)</p>
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@ function App() {
             <p><strong>SIMPRO Publicações e Teleprocessamento </strong></p>
             <p><strong>Cargo: </strong>Analista de desenvolvimento frontEnd</p>
             <p><strong>Tempo de atuação: </strong>Junho 2022 - atualmente </p>
-            <p><strong>Funções exercidas: </strong>Desenvolvimento de aplicações utilizando html, css e bootstrap para layout de modelo responsivo em angular, controle de rotas e consumo de APID</p>
+            <p><strong>Funções exercidas: </strong>Desenvolvimento de aplicações utilizando html, css e bootstrap para layout de modelo responsivo em angular, controle de rotas e consumo de API</p>
           </div>
         </div>
         <div className='empresa'>
