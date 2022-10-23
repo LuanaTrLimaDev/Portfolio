@@ -1,132 +1,138 @@
 import React, { useState } from 'react';
 import './App.css';
-import avatarLua from "./img/avatar-lua.png"
-import luanaLima from "./img/luana-lima.jpeg"
 import adias from "./img/adias.png"
 import maisvalor from "./img/mais-valor.png"
-import embraer from "./img/embraer.png"
-import { GraduationCap, FacebookLogo, LinkedinLogo, GithubLogo, List } from "phosphor-react";
+import simpro from "./img/simpro.png"
+import { FacebookLogo, LinkedinLogo, GithubLogo } from "phosphor-react";
 import { Link } from "react-scroll"
-
-
+import luanaavatar from "../src/img/luana.png"
+import macbook from "../src/img/macbook.jpg"
+import detalhe from "../src/img/datalhe.png"
+import curriculoLuana from "../src/img/curriculo.pdf"
 function App() {
-  const [showFront, setShowFront] = useState(false);
-  const [showBack, setShowBack] = useState(false);
-  const [showBanco, setShowBanco] = useState(false);
-  const [showFerramenta, setShowFerramenta] = useState(false);
-  const [mobile, setMobile] = useState(false);
 
   return (
     <>
-      <div className='engloba-menu-logo'>
-        <h3 className="logo">L</h3>
-        <nav className='menu'>
-          <Link className='link-menu' to='sobre' smooth={true} duration={1000}>Sobre mim</Link>
-          <Link className='link-menu' to='conhecimentos' smooth={true} duration={1000}>Conhecimentos</Link>
-          <Link className='link-menu' to='experiencia' smooth={true} duration={1000}>Experiência profissional</Link>
-          <Link className='link-menu' to='contato' smooth={true} duration={1000}>Contato</Link>
-        </nav>
-        <ul className="redes-sociais">
-          <li className='menu-item'><a target='_blank' className='menu-link' href='https://www.facebook.com/luana.trigueiro.3' rel='noreferrer'><FacebookLogo size={30} /></a></li>
-          <li className='menu-item'><a target='_blank' className='menu-link' href='https://www.linkedin.com/in/luana-trigueiro-60b095178/' rel='noreferrer'><LinkedinLogo size={30} /></a></li>
-          <li className='menu-item'><a target='_blank' className='menu-link' href='https://github.com/LuanaTrLimaDev' rel='noreferrer'><GithubLogo size={30} /></a></li>
-        </ul>
-      </div>
-      <div className="banner">
-        <div className="texto">
-          <h1>
-            <small>Olá meu nome é</small>
-            <br />
-            Luana
-            <br />
-            Trigueiro
-          </h1>
-          <h3 className='subtitulo-banner'>Desenvolvedora FrontEnd</h3>
-          <a href="/Luana-Aparecida-Trigueiro-Lima.pdf" target="_blank" download className="btn-curriculo">Conheça meu currículo</a>
+      <div className='navbar-manu'>
+        <div className='main-menu'>
+          <h3 className="logo">L</h3>
+          <nav className='menu'>
+            <Link className='link-menu' to='sobre' smooth={true} duration={1000}>Sobre mim</Link>
+            <Link className='link-menu' to='conhecimentos' smooth={true} duration={1000}>Conhecimentos</Link>
+            <Link className='link-menu' to='experiencia' smooth={true} duration={1000}>Experiência profissional</Link>
+            <Link className='link-menu' to='contato' smooth={true} duration={1000}>Contato</Link>
+          </nav>
+          <ul className="redes-sociais">
+            <li className='menu-item'><a target='_blank' className='menu-link' href='https://www.facebook.com/luana.trigueiro.3' rel='noreferrer'><FacebookLogo size={30} /></a></li>
+            <li className='menu-item'><a target='_blank' className='menu-link' href='https://www.linkedin.com/in/luana-trigueiro-60b095178/' rel='noreferrer'><LinkedinLogo size={30} /></a></li>
+            <li className='menu-item'><a target='_blank' className='menu-link' href='https://github.com/LuanaTrLimaDev' rel='noreferrer'><GithubLogo size={30} /></a></li>
+          </ul>
         </div>
-        <img src={avatarLua} className="avatar-luana" />
-      </div>
-      <div className="sobre-mim" id="sobre">
-        <img src={luanaLima} className="img-lua" />
-        <div className='texto-sobre-mim'>
-          <h2 className="titulo-sobremim">Sobre mim</h2>
-          <p className="info-sobre">Meu nome é Luana Trigueiro, tenho 24 anos, com sete meses de experiência como programadora, atualmente trabalho na Adias Ar Condicionado como Programador FrontEnd Jr , onde desenvolvo aplicações em react fazendo a parte de diagramação, controle de rotas e gerenciamento de estados. Estou no último semestre da faculdade Análise e Desenvolvimento de Sistema, que concluo em junho de 2022 na Estácio. Atualmente moro em São Paulo - SP.</p>
-          <p className="formacao"> <GraduationCap size={18} />Formação Acadêmica: Análise e Desenvolvimento de Sistemas – De 01/2020 a 06/2022</p>
+        <div className='portfolio-img'>
+          <h3 className='titulo-page'>Luana Trigueiro</h3>
+          <div className='lua-img'>
+            <img src={luanaavatar} className="img-luana" />
+          </div>
+          <h4 className='title-resumo'>Analista de desenvolvimento frontend</h4>
+          <p className='text-resumo'>com pouco mais de um dois anos de experiência como programadora, atualmente trabalho na Simpro publicações e teleprocessamento como Analista de desenvolvimento FrontEnd Jr. Sou formada em Análise e Desenvolvimento de Sistema, pela Estácio. Atualmente moro em São Paulo - SP.</p>
         </div>
       </div>
-      <div className="meus-conhecimentos" id="conhecimentos">
-        <h2 className="titulo-conhecimentos">Conhecimentos</h2>
-        <div className="engloba-btn-conhecimentos">
-          <button className="btn-conhecimentos" onClick={() => setShowFront(!showFront)}>FrontEnd</button>
-          <button className="btn-conhecimentos" onClick={() => setShowBack(!showBack)}>BackEnd</button>
-          <button className="btn-conhecimentos" onClick={() => setShowBanco(!showBanco)}>Banco de dados</button>
-          <button className="btn-conhecimentos" onClick={() => setShowFerramenta(!showFerramenta)}>Ferramentas</button>
+
+
+      <div className="sobre-contato" id="sobre">
+        <div className='sobre-mim'>
+          <h2 className="titulo-geral">Sobre mim</h2>
+          <p className="text-geral">Meu nome é Luana,tenho 25 anos, e  um pouco mais de um dois anos de experiência como programadora, atualmente trabalho na Simpro publicações e teleprocessamento como Analista de desenvolvimento FrontEnd Jr, realizando todo o frontend utilizando html, css e bootstrap para layout de modelo responsivo em angular, controle de rotas e consumo de API. Sou formada em Análise e Desenvolvimento de Sistema, pela Estácio. Atualmente moro em São Paulo - SP.</p>
+
+          <a href={curriculoLuana} download className='btn-curriculo'>Baixe meu currículo</a>
         </div>
-        <ul className='lista-conhecimentos'>
-          {showFront && <React.Fragment>
-            <li className='conhecimento'> HTML</li>
-            <li className='conhecimento'> CSS</li>
-            <li className='conhecimento'>Bootstrap</li>
-            <li className='conhecimento'> FlexBox</li>
-            <li className='conhecimento'>JavaScript</li>
-            <li className='conhecimento'>Jquery</li>
-            <li className='conhecimento'> React</li>
-          </React.Fragment>}
-          {showBack && <React.Fragment>
-            <li className='conhecimento'>PHP</li>
-            <li className='conhecimento'>Wordpress</li>
-          </React.Fragment>}
-          {showBanco && <React.Fragment>
-            <li className='conhecimento'>MySQL</li>
-          </React.Fragment>}
-          {showFerramenta && <React.Fragment>
-            <li className='conhecimento'> Git</li>
-            <li className='conhecimento'> GitHub</li>
-            <li className='conhecimento'> BitBucket</li>
-          </React.Fragment>}
-        </ul>
+        <div className='contato'>
+          <img src={macbook} className="macbook-contato" />
+          <div>
+            <h2 className='titulo-geral'>Contato</h2>
+            <p className="text-contato"><strong>Telefone: </strong>(11) 95834-4522</p>
+            <p className="text-contato"><strong>E-mail: </strong>luana.trigueiro.sjc@gmail.com</p>
+            <p className="text-contato"><strong>Residência:</strong> São Paulo - SP (próximo a linha 3 do metrô, região da penha)</p>
+          </div>
+        </div>
+      </div>
+      <div className="conhecimentos-experiencia" id="conhecimentos">
+        <div>
+          <h2 className='titulo-geral'>Conhecimentos</h2>
+          <div className='conhecimentos'>
+            <div className='list-conhecimentos'>
+              <img src={detalhe} className="img-detalhes" />
+              <h3 className='title-tecnologia'>FrontEnd</h3>
+              <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+                <li>Jquery</li>
+                <li>React</li>
+                <li>Angular</li>
+                <li>TypeScript</li>
+                <li>Styled Components</li>
+                <li>Bootstrap</li>
+                <li>Sass</li>
+                <li>wordpress</li>
+              </ul>
+            </div>
+            <div className='list-conhecimentos'>
+              <img src={detalhe} className="img-detalhes" />
+              <h3 className='title-tecnologia'>BackEnd</h3>
+              <ul>
+                <li>PHP</li>
+                <li>Node Js</li>
+                <li>API REST</li>
+              </ul>
+            </div>
+            <div className='list-conhecimentos'>
+              <img src={detalhe} className="img-detalhes" />
+              <h3 className='title-tecnologia'>Ferramentas</h3>
+              <ul>
+                <li>Bitbucket</li>
+                <li>GitHub</li>
+                <li>GIT</li>
+                <li>Json</li>
+                <li>Scrum</li>
+                <li>Figma</li>
+                <li>Kanban</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="experiencia-profissional" id="experiencia">
-        <h2 className="titulo-experiencia">Experiências profissional</h2>
+        <h2 className="titulo-geral">Experiências profissional</h2>
+        <div className='empresa'>
+          <img src={simpro} className="img-empresa" />
+          <div className="texto-empresa">
+            <p><strong>SIMPRO Publicações e Teleprocessamento </strong></p>
+            <p><strong>Cargo: </strong>Analista de desenvolvimento frontEnd</p>
+            <p><strong>Tempo de atuação: </strong>Junho 2022 - atualmente </p>
+            <p><strong>Funções exercidas: </strong>Desenvolvimento de aplicações utilizando html, css e bootstrap para layout de modelo responsivo em angular, controle de rotas e consumo de APID</p>
+          </div>
+        </div>
         <div className='empresa'>
           <img src={adias} className="img-empresa" />
           <div className="texto-empresa" >
-            <p><strong>ADIAS AR CONDICIONADO</strong></p>
-            <p><strong>Cargo:</strong> Programador FrontEnd Jr.</p>
-            <p><strong>Tempo de atuação:</strong> De Novembro de 2021 até atualmente</p>
-            <p><strong>Funções exercidas:</strong> Desenvolver aplicações em react fazendo desde a parte de diagramação, controle de rotas e gerenciamento de estados.</p>
+            <p><strong>Adias ar condicionado</strong></p>
+            <p><strong>Cargo: </strong>Programador FrontEnd Jr.</p>
+            <p><strong>Tempo de atuação: </strong>Novembro de 2021 até Abril 2022</p>
+            <p><strong>Funções exercidas: </strong>Desenvolvimento aplicações em react fazendo desde a parte de diagramação, controle de rotas e gerenciamento de estados.</p>
           </div>
         </div>
         <div className='empresa'>
           <img src={maisvalor} className="img-empresa" />
           <div className="texto-empresa">
-            <p><strong>GRUPO MAIS VALOR</strong></p>
-            <p><strong>Cargo:</strong> Estágio em programação</p>
-            <p><strong>Tempo de atuação:</strong> De Agosto de 2019 até Outubro de 2019 </p>
-            <p><strong>Funções exercidas:</strong> Desenvolvimento do site interno EAD em wordpress.</p>
+            <p><strong>Grupo mais valor</strong></p>
+            <p><strong>Cargo: </strong>Estágio em programação</p>
+            <p><strong>Tempo de atuação: </strong>Agosto de 2019 até Outubro de 2019 </p>
+            <p><strong>Funções exercidas: </strong>Desenvolvimento de portal interno de educação a distância em wordpress, utilizando bootstrap</p>
           </div>
         </div>
-        <div className='empresa'>
-          <img src={embraer} className="img-empresa" />
-          <div className="texto-empresa">
-            <p><strong>EMBRAER S.A</strong></p>
-            <p><strong>Cargo:</strong> Aprendiz SENAI</p>
-            <p><strong>Tempo de atuação:</strong> De Janeiro 2014 a Janeiro 2016</p>
-            <p><strong>Funções exercidas:</strong> controle e gestão do fluxo de produção, programa de excelência empressarial Embraer P3E.</p>
-          </div>
-        </div>
-      </div>
-      <div className="area-contato" id="contato">
-        <h2 className="titulo-contato">Contato</h2>
-        <div className="texto-contato">
-          <p className="info-contato"><strong>Telefone:</strong> (11) 95834-4522 | (11) 95836-3777</p>
-          <p className="info-contato"><strong>E-mail:</strong> luana.trigueiro.sjc@gmail.com</p>
-          <p className="info-end"><strong>Residência:</strong> São Paulo - SP (próximo a linha 3 do metrô, região da penha)</p>
-        </div>
-        <button className="btn-whats">Conversar pelo whatsapp</button>
       </div>
       <footer className="footer-direitos">
-        <button className="btn-voltar">Voltar ao topo</button>
         <p className="direitos">Luana Trigueiro - 2022 © todos os direitos reservados </p>
       </footer>
     </>

@@ -6,14 +6,19 @@
   box-sizing: border-box;
 }
 
-.engloba-menu-logo {
+.navbar-manu {
+  background-image: url(../src/img/bg-luana.png);
+  background-repeat: no-repeat;
   width: 100%;
-  height: 80px;
-  background-color: #202120;
-  padding: 20px;
+  height: 665px;
+
+}
+
+.main-menu {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 5px;
 }
 
 .logo {
@@ -21,23 +26,25 @@
   color: #fff;
   font-family: 'Passions Conflict', cursive;
   font-weight: 300;
-
 }
 
 .link-menu {
   font-family: 'Roboto Slab', serif;
   margin-right: 15px;
-  color: #6FCF79;
+  color: #ffffff;
   cursor: pointer;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .menu-item {
   list-style: none;
 }
+
 .redes-sociais {
   display: flex;
 }
+
 .menu-link {
   color: #fff;
   text-decoration: none;
@@ -47,102 +54,136 @@
   cursor: pointer;
 }
 
-
-.contato {
-  background-color: #6FCF79;
-  padding: 7px 14px;
-  border-radius: 15px;
+.titulo-page {
+  font-family: 'Roboto Slab', serif;
+  font-size: 70px;
+  margin-top: 15px;
+  color: #373636;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
-.banner {
-  width: 100%;
-  background-color: #000000;
-  padding: 30px;
-  padding-bottom: 0;
+.portfolio-img {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
-h1 {
-  font-size: 70px;
-  color: #fff;
-  font-family: 'Roboto Slab', serif;
+
+.lua-img {
+  border-radius: 50%;
+  background-color: #fff;
+  width: fit-content;
 }
 
-h1 small {
-  font-size: 25px;
-  color: #fff;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
+.img-luana {
+  width: 300px;
+  border-radius: 50%;
+  transform: translate(4px, -4px);
 }
 
-.subtitulo-banner {
-  font-size: 20px;
-  color: #6FCF79;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-  margin-bottom: 50px;
-}
-
-.btn-curriculo {
-  background-color: #6FCF79;
-  border-radius: 25px;
-  padding: 14px 50px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #fff;
+.title-resumo {
+  font-size: 22px;
+  margin-top: 15px;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #373636;
+  text-align: center;
 }
 
-.banner img{
-  align-self: flex-end;
+.text-resumo {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  text-align: center;
+  width: 1000px;
+  font-weight: 400;
+  color: #373636;
 }
 
-.banner .texto{
-  padding-bottom: 80px;
+.sobre-contato {
+  background-image: url(../src/img/bg-luana2.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 719px;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
 }
 
 .sobre-mim {
-  width: 100%;
-  background-color: #F7F7F7;
-  padding: 30px;
-  padding-bottom: 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding-bottom: 30px;
 }
 
-.img-lua {
-  height: 400px;
-  margin-right: 50px;
+.btn-curriculo {
+  padding: 7px 14px;
+  border: none;
+  background-color: rgb(209, 72, 211);
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  margin-top: 60px;
+  text-decoration: none;
 }
 
-.titulo-sobremim {
+
+.titulo-geral {
   font-size: 30px;
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
-  color: #000000;
-  margin-bottom: 40px;
+  color: #373636;
+  padding: 20px;
+  text-align: center;
 }
 
-.info-sobre {
-  width: 750px;
-  font-size: 20px;
+.text-geral {
+  width: 467px;
+  font-size: 17px;
   font-family: 'Roboto Slab', serif;
   text-align: justify;
   line-height: 30px;
-  margin-top: 20px;
+  margin-top: 10px;
+  color: #373636;
 }
 
-.formacao {
-  width: 750px;
-  font-size: 20px;
+.contato {
+  width: 268px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.text-contato {
+  font-size: 16px;
   font-family: 'Roboto Slab', serif;
   text-align: justify;
-  line-height: 30px;
-  margin-top: 20px;
+  line-height: 20px;
+  color: #373636;
+}
+
+.macbook-contato {
+  width: 540px;
+  margin-left: -263px;
+}
+
+.conhecimentos {
+  display: flex;
+  padding: 40px;
+}
+
+.img-detalhes {
+  width: 164px;
+  height: 18px;
+}
+
+.conhecimentos-experiencia {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff6fc;
+  height: 493px;
+
 }
 
 .meus-conhecimentos {
@@ -153,61 +194,31 @@ h1 small {
   padding-bottom: 30px;
 }
 
-.titulo-conhecimentos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 42px;
+.list-conhecimentos {
+  text-align: center;
+  margin-left: 50px;
 }
 
-.engloba-btn-conhecimentos {
-  display: flex;
-  justify-content: space-around;
-}
-
-.btn-conhecimentos {
-  font-size: 15px;
-  padding: 14px 24px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: bold;
-  color: #000000;
-  border: 4px solid #6FCF79;
-  border-radius: 10px;
-
-}
-
-.lista-conhecimentos {
+li {
   list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 20px;
-} 
-
-.lista-conhecimentos .conhecimento {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 23%;
-  background-color: #6FCF79;
-  margin-top: 20px;
-  padding: 15px;
   font-size: 15px;
-  color: #fff;
-  border-radius: 10px;
   font-family: 'Roboto Slab', serif;
+  color: #373636;
+  padding: 4px
 }
 
+
+.title-tecnologia {
+  font-size: 17px;
+  font-family: 'Roboto Slab', serif;
+  color: #373636;
+  padding: 4px
+}
 
 .experiencia-profissional {
-width: 100%;
-background-color: #F7F7F7;
-padding: 30px;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
 }
 
 .titulo-experiencia {
@@ -216,6 +227,12 @@ padding: 30px;
   font-family: 'Roboto Slab', serif;
   font-size: 30px;
   margin-bottom: 40px;
+}
+
+
+.text-experiencia {
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .empresa {
@@ -236,12 +253,6 @@ padding: 30px;
   margin-top: 20px;
 }
 
-.area-contato {
-  width: 100%;
-  background-color: #000000;
-  padding: 30px;
-}
-
 .titulo-contato {
   display: flex;
   justify-content: center;
@@ -253,190 +264,96 @@ padding: 30px;
   margin-bottom: 42px;
 }
 
-.info-contato {
-  font-size: 20px;
-  font-family: 'Roboto Slab', serif;
-  color: #fff;
-  margin-left: 200px;
-}
-
-.info-end {
-  margin-bottom: 40px;
-  font-size: 20px;
-  font-family: 'Roboto Slab', serif;
-  color: #fff;
-  margin-left: 200px;
-}
-
-.btn-whats {
-  padding: 10px 40px;
-  background-color: #6FCF79;
-  border: none;
-  display: block;
-  margin: 0 auto;
-  font-size: 20px;
-  font-family: 'Roboto Slab', serif;
-  color: #fff; 
-  border-radius: 15px;
-}
-
 .footer-direitos {
   width: 100%;
-  background-color: #202120;
-  padding: 30px;  
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(247, 181, 255, 1) 54%, rgba(255, 86, 252, 1) 100%);
+  padding: 30px;
 }
 
 .direitos {
   font-family: 'Roboto Slab', serif;
-  color: #fff; 
+  color: #fff;
   display: flex;
   justify-content: center;
-}
-
-.btn-voltar {
-    font-size: 14px;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    text-decoration: none;
-    padding: 11px 16px;
-    background-color: #6FCF79;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
 }
 
 
 @media (max-width: 1024px) {
-.menu {
-  display: none;
-}
+  .navbar-manu {
+    padding: 10px;
+  }
 
-.redes-sociais .menu-item {
-  margin-right: 20px;
-}
+  .img-luana {
+    width: 200px;
+  }
 
-.logo {
-  font-size: 45px;
-}
+  .title-resumo {
+    font-size: 20px;
+  }
 
-.banner {
-display: flex;
-align-items: center;
-flex-direction: column;
-}
-.banner .texto {
-  padding-bottom: 34px;
-}
+  .text-resumo {
+    width: 100%;
+    height: 100%;
+  }
 
-h1 small {
-  font-size: 17px;
-}
+  .menu {
+    display: none;
+  }
 
-h1 {
-  font-size: 48px;
-}
+  .redes-sociais .menu-item {
+    margin-right: 20px;
+  }
 
-.subtitulo-banner {
-  font-size: 16px; 
-  margin-bottom: 30px;
-}
+  .logo {
+    font-size: 45px;
+  }
 
-.btn-curriculo {
-  padding: 10px 35px
-}
+  .titulo-page {
+    font-size: 38px;
+  }
 
-.avatar.luana {
-  width: 150px;
-}
+  .titulo-geral {
+    font-size: 22px;
+  }
 
-.sobre-mim {
-  align-items: center;
+  .macbook-contato {
+    display: none;
+  }
+
+  .sobre-contato {
     flex-direction: column;
-}
+    padding: 10px;
+  }
 
-.img-lua {
-  height: 250px; 
-  margin-right: 0;
-}
+  .btn-curriculo {
+    margin-top: 10px;
+  }
 
-.titulo-sobremim {
-display: flex;
-justify-content: center;
-margin-top: 21px;
-font-size: 25px;
-}
-.info-sobre {
-  width: 356px;
-  font-size: 17px;
-}
-.formacao {
-  width: 330px;
-  font-size: 17px;
-}
-.titulo-conhecimentos {
-  font-size: 25px;
-}
+  .text-geral {
+    width: 100%;
+  }
 
-.engloba-btn-conhecimentos {
-  display: flex;
-  flex-direction: column;
-}
-.btn-conhecimentos {
-  font-size: 15px;
-  margin-bottom: 20px;
-  padding: 7px 14px;
-}
-.lista-conhecimentos .conhecimento {
-  width: 29%;
-}
-.titulo-experiencia {
-  font-size: 25px;
-}
-.empresa {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
+  .conhecimentos-experiencia {
+    height: 100%;
+  }
 
-.texto-empresa {
-  font-size: 16px;
-}
-.texto-contato {
-  width: 340px;
-}
-.info-contato {
-  font-size: 14px;
-  font-family: 'Roboto Slab', serif;
-  color: #fff;
-  margin-left: 20px;
-}
+  .empresa {
+    flex-direction: column;
+  }
 
-.info-end {
-  font-size: 14px;
-  font-family: 'Roboto Slab', serif;
-  color: #fff;
-  margin-left: 20px;
-}
-.btn-whats {
-  padding: 7px 14px;
-  font-size: 15px;
-}
+  .texto-empresa {
+    font-size: 16px;
+  }
 
-.footer-direitos {
-  display: flex;
-  justify-content: center;
-  flex-direction:column;
-}
+  .conhecimentos {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+  }
 
-.direitos {
-  text-align: center;
-}
+  .direitos {
+    text-align: center;
+  }
 
-.btn-voltar {
-  font-size: 14px;
-  padding: 7px 14px;
-  margin-bottom: 20px;
-}
 }
