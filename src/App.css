@@ -338,6 +338,9 @@ li {
     height: 100%;
   }
 
+  .list-conhecimentos {
+    margin-left: 0px;
+  }
   .empresa {
     flex-direction: column;
   }
